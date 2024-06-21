@@ -13,7 +13,7 @@ export const LoginSignup = () => {
       </div>
       <div className="inputs">
         <div className="input">
-          <img src={user_icon} style={{height:"40px", width:"40px" }}  alt="UserIcon" />
+          <img src={user_icon} style={{height:"30px", width:"30px" }}  alt="UserIcon" />
           <input type="text" />
         </div>
         <div className="input">
