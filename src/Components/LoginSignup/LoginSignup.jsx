@@ -17,7 +17,7 @@ export const LoginSignup = () => {
           <input type="text" />
         </div>
         <div className="input">
-          <img src={mail_icon} style={{height:"40px", width:"40px" }} alt="MailIcon" />
+          <img src={mail_icon} style={{height:"30px", width:"30px" }} alt="MailIcon" />
           <input type="email" />
         </div>
         <div className="input">
