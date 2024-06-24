@@ -24,6 +24,11 @@ export const LoginSignup = () => {
           <img src={password_icon} style={{height:"40px", width:"40px" }} alt="PasswordIcon" />
           <input type="password" />
         </div>
+        <div className="submit-container">
+          <div className="submit">
+            
+          </div>
+        </div>
       </div>
     </div>
   );
