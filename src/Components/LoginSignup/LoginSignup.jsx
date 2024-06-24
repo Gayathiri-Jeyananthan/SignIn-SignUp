@@ -36,7 +36,7 @@ export const LoginSignup = () => {
           />
           <input type="password" placeholder="Password" />
         </div>
-        <div className="forgot-password">Lost Password? Click Here!</div>
+        <div className="forgot-password">Lost Password? <span> Click Here!</span> </div>
         <div className="submit-container">
           <div className="submit">Sign Up</div>
           <div className="submit">Login</div>
