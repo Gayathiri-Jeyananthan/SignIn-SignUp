@@ -5,8 +5,7 @@ import mail_icon from "../Assets/images.png";
 import password_icon from "../Assets/password.png";
 
 export const LoginSignup = () => {
-
-  const [action,setAction]=useState("Sign Up");
+  const [action, setAction] = useState("Sign Up");
 
   return (
     <div className="container">
@@ -15,14 +14,19 @@ export const LoginSignup = () => {
         <div className="underline"></div>
       </div>
       <div className="inputs">
-        <div className="input">
-          <img
-            src={user_icon}
-            style={{ height: "30px", width: "30px" }}
-            alt="UserIcon"
-          />
-          <input type="text" placeholder="Name" />
-        </div>
+        {action === "Login" ? 
+          <div></div>
+         : 
+          <div className="input">
+            <img
+              src={user_icon}
+              style={{ height: "30px", width: "30px" }}
+              alt="UserIcon"
+            />
+            <input type="text" placeholder="Name" />
+          </div>
+        }
+
         <div className="input">
           <img
             src={mail_icon}
@@ -39,10 +43,27 @@ export const LoginSignup = () => {
           />
           <input type="password" placeholder="Password" />
         </div>
-        <div className="forgot-password">Forget Password? <span> Click Here!</span> </div>
+        {action === "Sign Up" ? <div></div> :<div className="forgot-password">
+          Forget Password? <span> Click Here!</span>{" "}
+        </div> }
+        
         <div className="submit-container">
-          <div className={action==="Login"? "submit gray": "submit"}>Sign Up</div>
-          <div className={action==="Sign Up"? "submit gray": "submit"}>Login</div>
+          <div
+            className={action === "Login" ? "submit gray" : "submit"}
+            onClick={() => {
+              setAction("Sign Up");
+            }}
+          >
+            Sign Up
+          </div>
+          <div
+            className={action === "Sign Up" ? "submit gray" : "submit"}
+            onClick={() => {
+              setAction("Login");
+            }}
+          >
+            Login
+          </div>
         </div>
       </div>
     </div>
