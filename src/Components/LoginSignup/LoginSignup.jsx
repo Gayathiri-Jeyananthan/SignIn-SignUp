@@ -13,18 +13,30 @@ export const LoginSignup = () => {
       </div>
       <div className="inputs">
         <div className="input">
-          <img src={user_icon} style={{height:"30px", width:"30px" }}  alt="UserIcon" />
+          <img
+            src={user_icon}
+            style={{ height: "30px", width: "30px" }}
+            alt="UserIcon"
+          />
           <input type="text" />
         </div>
         <div className="input">
-          <img src={mail_icon} style={{height:"30px", width:"30px" }} alt="MailIcon" />
+          <img
+            src={mail_icon}
+            style={{ height: "30px", width: "30px" }}
+            alt="MailIcon"
+          />
           <input type="email" />
         </div>
         <div className="input">
-          <img src={password_icon} style={{height:"30px", width:"30px" }} alt="PasswordIcon" />
+          <img
+            src={password_icon}
+            style={{ height: "30px", width: "30px" }}
+            alt="PasswordIcon"
+          />
           <input type="password" />
         </div>
-      <div className="forgot-password">Lost Password? Click Here!</div>
+        <div className="forgot-password">Lost Password? Click Here!</div>
         <div className="submit-container">
           <div className="submit">Sign Up</div>
           <div className="submit">Login</div>
