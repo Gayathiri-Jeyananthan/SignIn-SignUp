@@ -18,7 +18,7 @@ export const LoginSignup = () => {
             style={{ height: "30px", width: "30px" }}
             alt="UserIcon"
           />
-          <input type="text" />
+          <input type="text" placeholder="Name" />
         </div>
         <div className="input">
           <img
@@ -26,7 +26,7 @@ export const LoginSignup = () => {
             style={{ height: "30px", width: "30px" }}
             alt="MailIcon"
           />
-          <input type="email" />
+          <input type="email" placeholder="Email" />
         </div>
         <div className="input">
           <img
@@ -34,7 +34,7 @@ export const LoginSignup = () => {
             style={{ height: "30px", width: "30px" }}
             alt="PasswordIcon"
           />
-          <input type="password" />
+          <input type="password" placeholder="Password" />
         </div>
         <div className="forgot-password">Lost Password? Click Here!</div>
         <div className="submit-container">
