@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import "./LoginSignup.css";
 import user_icon from "../Assets/person.png";
 import mail_icon from "../Assets/images.png";
 import password_icon from "../Assets/password.png";
 
 export const LoginSignup = () => {
+
+  const [action,setAction]=useState("Sign Up");
+
   return (
     <div className="container">
       <div className="header">
-        <div className="text">SignUp</div>
+        <div className="text">{action}</div>
         <div className="underline"></div>
       </div>
       <div className="inputs">
@@ -38,8 +41,8 @@ export const LoginSignup = () => {
         </div>
         <div className="forgot-password">Forget Password? <span> Click Here!</span> </div>
         <div className="submit-container">
-          <div className="submit">Sign Up</div>
-          <div className="submit">Login</div>
+          <div className={action==="Login"? "submit gray": "submit"}>Sign Up</div>
+          <div className={action==="Sign Up"? "submit gray": "submit"}>Login</div>
         </div>
       </div>
     </div>

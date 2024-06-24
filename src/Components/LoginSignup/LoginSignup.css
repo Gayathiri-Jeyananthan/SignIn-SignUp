@@ -80,7 +80,7 @@
   margin: 60px auto;
 }
 
-.submit{
+.submit {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,4 +91,9 @@
   border-radius: 50px;
   font-weight: 700;
   cursor: pointer;
+}
+
+.gray {
+  background: #eaeaea;
+  color: #676767;
 }
